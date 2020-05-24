@@ -22,8 +22,10 @@ var end = ['so they end up doing nothing and their dreams become impossible.',
  var authors = [
      'Jordan Belfort', 'Gary Vaynerchuk', 'Dr Lucas D. Shallua','Jasleen Kour Gumbler', 'Compton Gage']
 
-
 const quoteButton = document.getElementById('btn-lg');
+let quote = '';
+let quoteNum = 1;
+let quoteType = 1;
 
 function randomNumber(){
     var randomNum = Math.floor(Math.random()*5);
@@ -31,7 +33,7 @@ function randomNumber(){
 }
 
 function randomNewQuote(){
-    let quote = '';
+     quote = '';
     var begRandom = randomNumber();
     var middleRandom = randomNumber();
     var endRandom = randomNumber();
@@ -43,12 +45,9 @@ function randomNewQuote(){
 
 }
 
-
-
 quoteButton.addEventListener('click',()=>{
     let CompleteQuote = randomNewQuote();
-    document.getElementById('quoteDisplay').innerHTML = CompleteQuote;
-   
+    document.getElementById('quoteDisplay').innerHTML = CompleteQuote;   
 });
 
 
