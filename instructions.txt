@@ -1,0 +1,3 @@
+Here are some instuctions
+
+Click in new quote random quote will be generated
