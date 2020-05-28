@@ -1,0 +1,4 @@
+Installation guide
+-----------------
+
+Install Visual studio code from the website and then from there we will start building on our website by writing code
